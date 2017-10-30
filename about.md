@@ -4,15 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+我是北京大学计算机科学技术系的一名本科学生，现在在学校的高能效计算中心实习。我的研究兴趣主要在计算机系统。另外，我也担任学校计算中心的学生网管。
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+爱好是计算机、开源、业余无线电、消费电子、户外、城市轨道交通。我也是 ACG 爱好者
+。
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+这是我的博客，主要记录和技术与生活相关的内容。
 
+由于上一个架在树莓派上的博客宕机，我也没有很好的备份，所以 2011 - 2013 年的文章
+中的图片和 2013 年的文章暂时无法恢复了。抱歉。
 
-[jekyll-organization]: https://github.com/jekyll
+我的个人主页：[www.yangl1996.com](http://www.yangl1996.com)
+
