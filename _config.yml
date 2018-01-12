@@ -30,7 +30,7 @@ plugins:
   - jekyll-feed
 
 exclude:
-    - content/
+#    - content/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
