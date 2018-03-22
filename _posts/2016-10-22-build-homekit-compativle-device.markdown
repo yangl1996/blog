@@ -1,8 +1,12 @@
 ---
 layout: post
-title: 自制 Homekit “智能家居”设备
+title: 自制 Homekit 和 Alexa “智能家居”设备
 image: "/content/images/2016/10/IMG_1158.jpg"
 date: '2016-10-22 19:28:17'
+---
+
+__注：__本文最初写于2016年10月22日，那次做的是HomeKit的设备，后来这个BeagleBone被用来干其他的事情了。今天（2018年3月22日）比较有空，决定把这个声控小灯恢复，这次用了Amazon Alexa，使用暑假买的Amazon Echo Dot控制，过程添加在文末。
+
 ---
 
 整个尝试起源于我想躺在床上看纸质轻小说：开学前在 Kindle 里放了 6 本，然后又跑到朝阳门买了 5 本纸质的，结果 Kindle 里的两周就看完了，纸质的到现在才看了 1/6 本。问题被归结到床上照明不好，看纸质书比较累，于是我决定在床边装个 24 小时可以亮的灯。
@@ -133,3 +137,15 @@ light
 这段用于检查并返回灯的状态。本来是直接无脑返回 cache 的状态，但这样健壮性未免太差了。所以这里改成用 `devmem2` 检查 GPIO 口状态（USB 有没有通电）并返回。
 
 至此，这个设备就完全可用了。现在只需要 `node Core.js` 并配对就可以啦！从 Siri 和 Home App 操作都没问题，也可以把 iPad 放在寝室做 Remote Access Server 提供远程控制。
+
+---
+
+### Amazon Alexa
+
+原来的HomeKit小灯因为BeagleBone被我拆走干别的事情而停用了一段时间。今天把BeagleBone重新刷了OS，决定把这个声控小灯恢复。之前HomeKit小灯的设置过程比较痛苦，最主要的原因就是它用了node.js。我的BeagleBone Black只有512M内存，而一个`npm install`是可以轻松用掉2G的（`npm`实在是太垃圾了，真不知道JS community怎么想的）。正好暑假买了一个Echo Dot，正愁没地方用，于是决定做一个和Alexa兼容的。
+
+Echo出来这么久，早就有人实现了[和它兼容的smart home device bridge](https://github.com/toddmedema/echo)。不过这个是个Python 2的程序，我正准备帮他改成Python 3的。
+
+搭建过程非常方便，首先确保有Python 2、pip，然后Echo和板子在同一个广播域内。然后clone[那个project](https://github.com/toddmedema/echo)并用pip安装所有依赖。Project里提供了一个example，第30行就是用来处理Echo发来的控制命令的。只要把它改成开关灯的code就可以了。另外，第27行设定了这个设备使用的名字和端口。这个名字就是之后向Echo说话时指代这个设备用的，可以改掉。
+
+配对过程也非常方便。和Echo说“discover my devices”，大概10秒就配对成功啦！

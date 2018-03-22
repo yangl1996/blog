@@ -34,3 +34,5 @@ devmem2 0x47401c60 b 0x01 # On
 echo "usb1" > /sys/bus/usb/drivers/usb/unbind
 echo "usb1" > /sys/bus/usb/drivers/usb/bind
 ```
+
+在某次Linux Kernel更新之后，这个控制USB口电源的操作貌似不能可靠地完成了，所以我写了[一个小 script](https://gist.github.com/yangl1996/4e172a00be7c4fa9d308f9af6decfca7)在出错的时候自动重试。
