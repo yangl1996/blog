@@ -16,7 +16,7 @@
 title: Lei's Blog
 email: i@yangl1996.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Copyright © 2010-{{site.time | date: '%Y'}} Lei Yang
+  Copyright © 2010-2018 Lei Yang
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yangl1996
