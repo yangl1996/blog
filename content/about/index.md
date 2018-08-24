@@ -4,7 +4,7 @@ title: About
 menu: main
 ---
 
-我是MIT CSAIL（Computer Science and Artificial Intelligence Lab）NMS（Networks and Mobile Systems）组的一名PhD学生。我的研究兴趣主要在网络系统、无线系统和IoT。
+我是[MIT](https://web.mit.edu) [CSAIL](https://csail.mit.edu) (Computer Science and Artificial Intelligence Lab) [NMS](http://nms.csail.mit.edu) (Networks and Mobile Systems)组的一名PhD学生。我的研究兴趣主要在网络系统、无线系统和IoT。
 
 我的其他爱好有开源、业余无线电、户外。
 
