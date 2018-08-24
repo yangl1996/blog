@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+menu: main
 ---
 
 我是MIT CSAIL（Computer Science and Artificial Intelligence Lab）NMS（Networks and Mobile Systems）组的一名PhD学生。我的研究兴趣主要在网络系统、无线系统和IoT。
