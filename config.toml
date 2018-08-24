@@ -2,4 +2,5 @@ relativeURLs = true
 googleAnalytics = "UA-24864834-6"
 title = "Lei's Blog"
 languageCode = "zh-cn"
+hasCJKLanguage = true
 
